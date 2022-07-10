@@ -1,0 +1,195 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+html{
+font-family: 'Roboto', sans-serif;
+}
+#navbar{
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0.75rem;
+    height: 70px;
+    
+}
+#navbar ul{
+    list-style-type: none;
+    display: flex;
+    align-items: center;            
+}
+#navbar ul li a{
+    padding: 0.75rem;
+}
+#navbar ul li a:hover{
+    background: #336ea2;
+    border-radius: 5px;
+    transition: 200ms;
+    border-bottom: 2px solid black;
+    transition: border .5s;
+}
+#home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    background: #fff;
+}
+#home img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 100%;
+    border: 4px solid black;
+}
+#home .name h2{
+    margin-bottom: 0.75rem;
+    letter-spacing: 1px;
+}
+#home .name p{
+    opacity: 0.6;
+    font-style: italic;
+}
+#home .links{
+    padding-top: 1rem;
+}
+#home a{
+    color: black;
+    font-size: 2rem;
+    padding: 0.70rem 0.70rem; 
+}
+#home a:hover{
+    
+    color: white;
+    background: #062e51;
+    border-radius: 4px;
+    border: 0.5px solid black;
+    transition: 0.1s;
+    transition: border 0.5s;
+
+}
+#aboutme{
+    /* background: #336ea2; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 2rem; 
+    padding-bottom: 2rem; 
+    align-items: center;
+    margin: 0 auto;
+}
+#aboutme .aboutme{
+    color: #fff;
+    margin-left: 20%;
+    flex-grow: 1;
+}
+#aboutme #para1{
+    color: #fff;
+    text-align: left;
+    text-indent:2rem;
+    margin: 0 15rem 0 7rem;
+    user-select: none;
+    flex-grow: 2;
+}
+#aboutme #para1 p{
+    padding: 0.75rem 0;
+    letter-spacing: 0.5px;
+}
+#education{
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding-top: 2rem; 
+    padding-bottom: 2rem; 
+    max-width: 900px;
+}
+#education h3{
+    padding-bottom: 2rem;
+
+}
+#education table, tr, th, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    user-select: none;
+    
+}
+#education .education{
+    padding-bottom: 2rem;
+}
+#education th,td{
+    padding: 1.5rem;
+}
+#education table a{
+    color: black;
+    border-bottom: 1px solid black; 
+    padding: 0.1rem;
+    border-radius: 3px;
+}
+#education table .erci {
+    background: #e7e7e7;
+}
+#education table a:hover{
+    background-color: #062e51;
+    color: #fff;
+    transition: all .2s ease;
+}
+
+#education table tr:hover{
+    background: #ddd;
+}
+#education table img{
+    width: 5rem;
+ }
+#contactme{
+    color: #fff;
+    padding: 1rem;
+}
+#contactme .contact-form{
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+}
+#contactme .contact-form ul{
+    list-style-type: none;
+    display: flex;
+    margin-top: 1rem;
+    align-self: center;
+    padding-bottom: 0.25rem;
+    border-bottom: 1px solid #fff;
+}
+#contactme .contact-form ul li a{
+    padding: 0.5rem;
+    font-size: 1.25rem;
+}
+#contactme .contact-form ul li a:hover{
+    opacity: 0.6;
+}
+#contactme .contact-form button{
+    color: #fff;
+    width: 100%;
+    padding: 0.5rem;
+    background: #336ea2;
+    border: 0;
+    border-radius: 5px;
+}
+#contactme .contact-form button:hover{
+    background: #2a5780;
+}
+#contactme .contact-form p{
+    margin: 0 auto;
+    padding-top: 0.25rem;
+    opacity: 0.6;
+    font-size: 0.8rem;
+    
+}
