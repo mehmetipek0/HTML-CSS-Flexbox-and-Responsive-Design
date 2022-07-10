@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Class(State)</title>
+</head>
+<style>
+    a{
+        color: white;
+        font-size: 1.5em;
+        display: inline-block;
+        background: blue;
+        padding: 10px;
+        text-decoration: none;
+        border-radius: 5px;
+    }
+    a:hover{
+        background: white;
+        color: blue;
+        border: 1px solid blue;
+        border-radius: 5px;
+    }
+    
+    /*
+    selector:pseudo_class{} 
+    */
+    /* a{
+        font-size: 24px;
+    }
+    a:link{
+        color: green;
+    }
+    a:visited{
+        color: black;
+    }
+    a:hover{
+        color: red;
+    }
+    a:active{
+        color: blueviolet;
+    }
+    input{
+        font-size: 1.5em;
+        padding: 10px;
+        border-radius: 4px;
+        border: 1px solid black;
+    }
+    input:focus{
+        outline: 0;
+        border: 1px solid red;
+    } */
+    button:hover{
+        font-size: 25px;
+        border-radius: 15px;
+    }
+</style>
+<body>
+    <a href="#">Facebook</a>
+    <!-- <a href="#">This is a link.</a> -->
+    <!-- <input type="text" placeholder="Name"> -->
+    <input type="text" placeholder="Name">
+    <input type="password" placeholder="Password">
+    <button>Login</button>
+    <button>Sign Up</button>
+</body>
+</html>
