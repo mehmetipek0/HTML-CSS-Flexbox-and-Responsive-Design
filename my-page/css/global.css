@@ -17,10 +17,12 @@
 /* Colors */
 
 .bg-dark-blue{
-    background: #062e51;
+    background: #041014;
+    /* background: #062e51; */
 }
 .bg-light-blue{
-    background: #336ea2;
+    background: #2596be;
+    /* background: #336ea2; */
 }
 /* Forms */
 .form-group{
@@ -41,6 +43,14 @@
     max-width: 1100px;
     margin: 0 auto;
 }
-
+.grow1{
+    flex-grow: 1;
+}
+.grow2{
+    flex-grow: 21;
+}
+.grow3{
+    flex-grow: 3;
+}
 
 
