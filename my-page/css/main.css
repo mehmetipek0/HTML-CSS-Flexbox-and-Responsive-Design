@@ -1,3 +1,4 @@
+/* General CSS */
 *{
     margin: 0;
     padding: 0;
@@ -10,6 +11,16 @@ a{
 html{
 font-family: 'Roboto', sans-serif;
 }
+body{
+    background: #2596be;
+}
+/* Navbar section started */
+header{
+    position: fixed;
+    width: 100%;
+    border-bottom: 4px solid #94afc7;
+
+}
 #navbar{
     color: #fff;
     display: flex;
@@ -17,6 +28,7 @@ font-family: 'Roboto', sans-serif;
     align-items: center;
     padding: 0 0.75rem;
     height: 70px;
+    user-select: none;
     
 }
 #navbar ul{
@@ -34,46 +46,53 @@ font-family: 'Roboto', sans-serif;
     border-bottom: 2px solid black;
     transition: border .5s;
 }
+/* Navbar section ends */
+/* Home section started */
 #home{
+    color: #fff;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 2rem;
-    background: #fff;
+    background: #2596be;
+    padding-top: 6.5rem;
 }
 #home img{
     max-width: 100%;
     height: auto;
     border-radius: 100%;
-    border: 4px solid black;
+    border: 4px solid #041014;
 }
 #home .name h2{
     margin-bottom: 0.75rem;
     letter-spacing: 1px;
 }
 #home .name p{
-    opacity: 0.6;
+    color: rgba(255, 255, 255, 0.6);
     font-style: italic;
 }
 #home .links{
     padding-top: 1rem;
 }
 #home a{
-    color: black;
+    color: #fff;
     font-size: 2rem;
-    padding: 0.70rem 0.70rem; 
+    margin: 0.3rem;
+    padding: 0.1rem 0.3rem; 
+    border: 0.5px solid transparent;
+    border-radius: 8px;
 }
-#home a:hover{
-    
+#home a:hover{  
     color: white;
-    background: #062e51;
-    border-radius: 4px;
+    background: #2a4e6d;
+    border-radius: 12px;
     border: 0.5px solid black;
     transition: 0.1s;
     transition: border 0.5s;
-
 }
+/* Home section ends */
+/* Aboutme section started */
 #aboutme{
     /* background: #336ea2; */
     display: flex;
@@ -101,54 +120,53 @@ font-family: 'Roboto', sans-serif;
     padding: 0.75rem 0;
     letter-spacing: 0.5px;
 }
-#education{
-    background: #fff;
+/* Aboutme section ends */
+/* Education section started */
+#schoolTable{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.card{  
     display: flex;
     flex-direction: column;
+    height: 450px;
+    width: 350px;
     justify-content: space-between;
-    align-items: center;
-    margin: 0 auto;
-    padding-top: 2rem; 
-    padding-bottom: 2rem; 
-    max-width: 900px;
-}
-#education h3{
-    padding-bottom: 2rem;
-
-}
-#education table, tr, th, td{
-    border: 1px solid black;
-    border-collapse: collapse;
+    align-items:center;
+    padding: 1rem 1rem;
+    background: #b4c3be;
+    border: 2px solid #c8d8d3;
+    border-radius: 12px;
+    font-size: 1rem;
+    text-align: center;
+    margin: 0 0.75rem 2rem 0.75rem;
+    overflow: hidden;
     user-select: none;
-    
 }
-#education .education{
-    padding-bottom: 2rem;
+.card:hover{
+    background: hsla(160, 11%, 74%, 0.9);
+    border: 2px solid #8aa79d;
+    transition: .4s ease-out;    
 }
-#education th,td{
-    padding: 1.5rem;
+.card #logo{
+    width: auto;
+    height: 60px; 
 }
-#education table a{
+.card a{
     color: black;
-    border-bottom: 1px solid black; 
-    padding: 0.1rem;
-    border-radius: 3px;
+    font-size: 1rem;
+    border: 1px solid transparent;
+    user-select: all;
 }
-#education table .erci {
-    background: #e7e7e7;
+.card a:hover{
+    background-color: #1a7596;
+    border: 1px solid #94afc7;
+    border-radius: 4px;
+    transition: .2s ease;
 }
-#education table a:hover{
-    background-color: #062e51;
-    color: #fff;
-    transition: all .2s ease;
-}
-
-#education table tr:hover{
-    background: #ddd;
-}
-#education table img{
-    width: 5rem;
- }
+/* Education section ends */
+/* Contact Me section starts */
 #contactme{
     color: #fff;
     padding: 1rem;
@@ -179,12 +197,12 @@ font-family: 'Roboto', sans-serif;
     color: #fff;
     width: 100%;
     padding: 0.5rem;
-    background: #336ea2;
+    background: #2596be;
     border: 0;
     border-radius: 5px;
 }
 #contactme .contact-form button:hover{
-    background: #2a5780;
+    background: #1a7596;
 }
 #contactme .contact-form p{
     margin: 0 auto;
